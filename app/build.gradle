@@ -39,4 +39,8 @@ dependencies {
 
     // material components
     implementation 'com.google.android.material:material:1.1.0-alpha08'
+    // webkit
+    implementation "androidx.webkit:webkit:1.0.0"
+    // material progressbar
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'
 }
