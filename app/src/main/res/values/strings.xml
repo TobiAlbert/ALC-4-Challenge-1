@@ -9,5 +9,9 @@
     <string name="title_email">Email: %s</string>
     <string name="title_phone_number">Phone Number: %s</string>
     <string name="title_slack_username">Slack Username: %s</string>
+    <string name="title_ssl_error">SSL Error</string>
+    <string name="text_ssl_error">Received an SSL Error whe trying to make a connection.</string>
+    <string name="proceed">Proceed</string>
+    <string name="cancel">Cancel</string>
 
 </resources>
