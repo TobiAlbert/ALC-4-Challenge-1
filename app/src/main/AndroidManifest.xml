@@ -13,12 +13,14 @@
                 android:name=".modules.about.AboutAlcActivity"
                 android:launchMode="singleTop"
                 android:screenOrientation="portrait"
-                android:theme="@style/AppTheme.NoActionBar"/>
+                android:theme="@style/AppTheme.NoActionBar"
+                android:parentActivityName=".modules.main.MainActivity"/>
         <activity
                 android:name=".modules.profile.MyProfileActivity"
                 android:launchMode="singleTop"
                 android:screenOrientation="portrait"
-                android:theme="@style/AppTheme.NoActionBar"/>
+                android:theme="@style/AppTheme.NoActionBar"
+                android:parentActivityName=".modules.main.MainActivity"/>
         <activity
                 android:name=".modules.main.MainActivity"
                 android:launchMode="singleTop"

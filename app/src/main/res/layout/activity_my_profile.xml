@@ -1,10 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.appcompat.widget.LinearLayoutCompat
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".modules.profile.MyProfileActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginTop="48dp"
+            app:srcCompat="@drawable/ic_andela_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/usernameTxt"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Tobi Daada"/>
+
+    <View
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/trackTxt"
+            android:text="@string/title_track"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Track: Android"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/countryTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Country: Nigeria"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/emailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Email: daadatobi@gmail.com"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/phoneTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Phone Number: +2348060868331"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/slackTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Slack Username: @Tobi"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
