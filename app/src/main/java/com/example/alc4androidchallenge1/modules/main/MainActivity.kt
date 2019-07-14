@@ -1,10 +1,13 @@
-package com.example.alc4androidchallenge1
+package com.example.alc4androidchallenge1.modules.main
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.alc4androidchallenge1.R
+import com.example.alc4androidchallenge1.modules.about.AboutAlcActivity
+import com.example.alc4androidchallenge1.modules.profile.MyProfileActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlin.reflect.KClass
+import kotlinx.android.synthetic.main.toolbar.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +19,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupUI() {
+        // setup toolbar
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = getString(R.string.app_name)
+
         // setup click listeners
         aboutAlcBtn.setOnClickListener { openActivity(AboutAlcActivity::class.java) }
         myProfileBtn.setOnClickListener { openActivity(MyProfileActivity::class.java) }

@@ -10,17 +10,17 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".AboutAlcActivity"
+                android:name=".modules.about.AboutAlcActivity"
                 android:launchMode="singleTop"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-                android:name=".MyProfileActivity"
+                android:name=".modules.profile.MyProfileActivity"
                 android:launchMode="singleTop"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-                android:name=".MainActivity"
+                android:name=".modules.main.MainActivity"
                 android:launchMode="singleTop"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar">

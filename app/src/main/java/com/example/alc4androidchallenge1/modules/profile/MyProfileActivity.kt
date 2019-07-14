@@ -1,7 +1,8 @@
-package com.example.alc4androidchallenge1
+package com.example.alc4androidchallenge1.modules.profile
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.alc4androidchallenge1.R
 
 class MyProfileActivity : AppCompatActivity() {
 
