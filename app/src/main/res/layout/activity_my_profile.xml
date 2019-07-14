@@ -26,17 +26,24 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-light"
             tools:text="Tobi Daada"/>
 
     <View
             android:background="@android:color/darker_gray"
             android:layout_marginTop="8dp"
             android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+            android:layout_height="1dp"
+            android:layout_marginBottom="56dp"/>
     
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/trackTxt"
             android:text="@string/title_track"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="Track: Android"/>
@@ -45,24 +52,36 @@
             android:id="@+id/countryTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
             tools:text="Country: Nigeria"/>
 
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/emailTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
             tools:text="Email: daadatobi@gmail.com"/>
 
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/phoneTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
             tools:text="Phone Number: +2348060868331"/>
 
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/slackTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
             tools:text="Slack Username: @Tobi"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
