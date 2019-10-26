@@ -24,9 +24,9 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.title = getString(R.string.app_name)
 
         // setup click listeners
-        aboutAlcBtn.setOnClickListener { openActivity(AboutAlcActivity::class.java) }
-        myProfileBtn.setOnClickListener { openActivity(MyProfileActivity::class.java) }
+        aboutAlcBtn.setOnClickListener { openActivity<AboutAlcActivity>() }
+        myProfileBtn.setOnClickListener { openActivity<MyProfileActivity>() }
     }
 
-    private fun openActivity(activity: Class<*>) { startActivity(Intent(this, activity)) }
+    private inline fun <reified T> openActivity() { startActivity(Intent(this, T::class.java)) }
 }
